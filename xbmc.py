@@ -14,8 +14,8 @@ from typing import Union, List, Tuple
 
 __kodistubs__ = True
 
-int_type = Union[int, long]
-str_type = Union[str, unicode]
+int_type = Union[int]
+str_type = Union[str]
 
 DRIVE_NOT_READY = 1
 ENGLISH_NAME = 2
@@ -2049,7 +2049,7 @@ def getDVDState():
 
         dvdstate = xbmc.getDVDState()
     """
-    return 0L
+    return 0
 
 
 def getFreeMem():
@@ -2063,7 +2063,7 @@ def getFreeMem():
 
         freemem = xbmc.getFreeMem()
     """
-    return 0L
+    return 0
 
 
 def getInfoLabel(cLine):

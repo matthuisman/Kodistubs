@@ -13,8 +13,8 @@ from typing import Union, List, Tuple
 
 __kodistubs__ = True
 
-int_type = Union[int, long]
-str_type = Union[str, unicode]
+int_type = Union[int]
+str_type = Union[str]
 
 
 class File(object):
@@ -104,7 +104,7 @@ class File(object):
             s = f.size()
             f.close()
         """
-        return 0L
+        return 0
     
     def seek(self, seekBytes, iWhence):
         # type: (int_type, int) -> long
@@ -121,7 +121,7 @@ class File(object):
             result = f.seek(8129, 0)
             f.close()
         """
-        return 0L
+        return 0
     
     def close(self):
         # type: () -> None
@@ -165,7 +165,7 @@ class Stat(object):
 
         :return: st_mode 
         """
-        return 0L
+        return 0
     
     def st_ino(self):
         # type: () -> long
@@ -174,7 +174,7 @@ class Stat(object):
 
         :return: st_ino 
         """
-        return 0L
+        return 0
     
     def st_dev(self):
         # type: () -> long
@@ -185,7 +185,7 @@ class Stat(object):
 
         :return: st_dev 
         """
-        return 0L
+        return 0
     
     def st_nlink(self):
         # type: () -> long
@@ -194,7 +194,7 @@ class Stat(object):
 
         :return: st_nlink 
         """
-        return 0L
+        return 0
     
     def st_uid(self):
         # type: () -> long
@@ -203,7 +203,7 @@ class Stat(object):
 
         :return: st_uid 
         """
-        return 0L
+        return 0
     
     def st_gid(self):
         # type: () -> long
@@ -212,7 +212,7 @@ class Stat(object):
 
         :return: st_gid 
         """
-        return 0L
+        return 0
     
     def st_size(self):
         # type: () -> long
@@ -226,7 +226,7 @@ class Stat(object):
 
         :return: st_size 
         """
-        return 0L
+        return 0
     
     def st_atime(self):
         # type: () -> long
@@ -235,7 +235,7 @@ class Stat(object):
 
         :return: st_atime 
         """
-        return 0L
+        return 0
     
     def st_mtime(self):
         # type: () -> long
@@ -244,7 +244,7 @@ class Stat(object):
 
         :return: st_mtime 
         """
-        return 0L
+        return 0
     
     def st_ctime(self):
         # type: () -> long
@@ -253,7 +253,7 @@ class Stat(object):
 
         :return: st_ctime 
         """
-        return 0L
+        return 0
     
 
 def copy(strSource, strDestination):

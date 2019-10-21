@@ -15,7 +15,7 @@ from xbmcgui import ListItem
 
 __kodistubs__ = True
 
-str_type = Union[str, unicode]
+str_type = Union[str]
 
 SORT_METHOD_ALBUM = 14
 SORT_METHOD_ALBUM_IGNORE_THE = 15

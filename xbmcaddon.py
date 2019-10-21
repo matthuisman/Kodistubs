@@ -9,7 +9,7 @@ from typing import Union
 
 __kodistubs__ = True
 
-str_type = Union[str, unicode]
+str_type = Union[str]
 
 
 class Addon(object):
