@@ -382,3 +382,21 @@ def listdir(path):
         dirs, files = xbmcvfs.listdir(path)
     """
     return [""], [""]
+
+def translatePath(path):
+    # type: (str_type) -> str
+    """
+    Returns the translated path. 
+
+    :param path: string or unicode - Path to format 
+    :return: Translated path
+
+    Only useful if you are coding for both Linux and Windows. e.g.
+    converts ``'special://masterprofile/script_data'`` ->
+    ``'/home/user/XBMC/UserData/script_data'`` on Linux.
+
+    Example::
+
+        fpath = xbmc.translatePath('special://masterprofile/script_data')
+    """
+    return ""
